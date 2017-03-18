@@ -33,27 +33,24 @@ The script will create the following files:
 # OS X errors
 
 ```
-[2017-03-18T09:52:42.811+01:00] [INFO] [HTTPServer.swift:86 listen(on:)] Listening on port 8090 (delegate: SSLService.SSLService)
-[2017-03-18T09:52:44.590+01:00] [ERROR] [IncomingSocketHandler.swift:148 handleRead()] Read from socket (file descriptor 7) failed. Error = Error code: -9806(0x-264E), ERROR: SSLRead, code: -9806, reason: errSSLClosedAbort.
-[2017-03-18T09:52:44.599+01:00] [ERROR] [IncomingSocketHandler.swift:148 handleRead()] Read from socket (file descriptor 8) failed. Error = Error code: -9806(0x-264E), ERROR: SSLRead, code: -9806, reason: errSSLClosedAbort.
-[2017-03-18T09:52:44.680+01:00] [ERROR] [IncomingSocketHandler.swift:148 handleRead()] Read from socket (file descriptor 7) failed. Error = Error code: -9806(0x-264E), ERROR: SSLRead, code: -9806, reason: errSSLClosedAbort.
-[2017-03-18T09:52:56.443+01:00] [ERROR] [IncomingSocketHandler.swift:148 handleRead()] Read from socket (file descriptor 8) failed. Error = Error code: -9806(0x-264E), ERROR: SSLRead, code: -9806, reason: errSSLClosedAbort.
-[2017-03-18T09:52:56.547+01:00] [ERROR] [IncomingSocketHandler.swift:148 handleRead()] Read from socket (file descriptor 8) failed. Error = Error code: -9806(0x-264E), ERROR: SSLRead, code: -9806, reason: errSSLClosedAbort.
-[2017-03-18T09:52:56.574+01:00] [ERROR] [IncomingSocketHandler.swift:148 handleRead()] Read from socket (file descriptor 7) failed. Error = Error code: -9806(0x-264E), ERROR: SSLRead, code: -9806, reason: errSSLClosedAbort.
-[2017-03-18T09:52:57.759+01:00] [ERROR] [IncomingSocketHandler.swift:148 handleRead()] Read from socket (file descriptor 7) failed. Error = Error code: -9806(0x-264E), ERROR: SSLRead, code: -9806, reason: errSSLClosedAbort.
-[2017-03-18T09:52:57.863+01:00] [ERROR] [IncomingSocketHandler.swift:148 handleRead()] Read from socket (file descriptor 7) failed. Error = Error code: -9806(0x-264E), ERROR: SSLRead, code: -9806, reason: errSSLClosedAbort.
-[2017-03-18T09:52:57.890+01:00] [ERROR] [IncomingSocketHandler.swift:148 handleRead()] Read from socket (file descriptor 8) failed. Error = Error code: -9806(0x-264E), ERROR: SSLRead, code: -9806, reason: errSSLClosedAbort.
-[2017-03-18T09:52:59.930+01:00] [ERROR] [IncomingSocketHandler.swift:148 handleRead()] Read from socket (file descriptor 8) failed. Error = Error code: -9806(0x-264E), ERROR: SSLRead, code: -9806, reason: errSSLClosedAbort.
-[2017-03-18T09:53:00.034+01:00] [ERROR] [IncomingSocketHandler.swift:148 handleRead()] Read from socket (file descriptor 8) failed. Error = Error code: -9806(0x-264E), ERROR: SSLRead, code: -9806, reason: errSSLClosedAbort.
-[2017-03-18T09:53:00.060+01:00] [ERROR] [IncomingSocketHandler.swift:148 handleRead()] Read from socket (file descriptor 7) failed. Error = Error code: -9806(0x-264E), ERROR: SSLRead, code: -9806, reason: errSSLClosedAbort.
+[2017-03-18T12:28:47.748+01:00] [INFO] [main.swift:43 kitura_ssl_bug] Using pfx file = /Users/javier/Documents/PlanB-Development/bug/kitura-ssl_bug/Certs/cert.pfx
+[2017-03-18T12:28:48.373+01:00] [INFO] [HTTPServer.swift:86 listen(on:)] Listening on port 8090 (delegate: SSLService.SSLService)
+[2017-03-18T12:28:52.651+01:00] [ERROR] [IncomingSocketHandler.swift:148 handleRead()] Read from socket (file descriptor 7) failed. Error = Error code: -9806(0x-264E), ERROR: SSLRead, code: -9806, reason: errSSLClosedAbort.
+[2017-03-18T12:28:52.672+01:00] [ERROR] [IncomingSocketHandler.swift:148 handleRead()] Read from socket (file descriptor 8) failed. Error = Error code: -9806(0x-264E), ERROR: SSLRead, code: -9806, reason: errSSLClosedAbort.
+[2017-03-18T12:28:55.723+01:00] [ERROR] [IncomingSocketHandler.swift:148 handleRead()] Read from socket (file descriptor 8) failed. Error = Error code: -9806(0x-264E), ERROR: SSLRead, code: -9806, reason: errSSLClosedAbort.
+[2017-03-18T12:28:55.827+01:00] [ERROR] [IncomingSocketHandler.swift:148 handleRead()] Read from socket (file descriptor 8) failed. Error = Error code: -9806(0x-264E), ERROR: SSLRead, code: -9806, reason: errSSLClosedAbort.
+[2017-03-18T12:28:55.855+01:00] [ERROR] [IncomingSocketHandler.swift:148 handleRead()] Read from socket (file descriptor 7) failed. Error = Error code: -36(0x-24), ERROR: SSLRead, code: -36, reason: errSecIO.
 ```
 # Linux errors (using docker ibmcom/kitura-ubuntu)
 
 ```
-[2017-03-18T09:37:11.468Z] [INFO] [HTTPServer.swift:86 listen(on:)] Listening on port 8090 (delegate: SSLService.SSLService)
-[2017-03-18T09:37:29.863Z] [ERROR] [IncomingSocketHandler.swift:265 handleWriteHelper()] Write to socket (file descriptor 6) failed. Error = Error code: 336195711(0x1409F07F), ERROR: SSL_write, code: 336195711, reason: bad write retry.
-[2017-03-18T09:37:44.804Z] [ERROR] [IncomingSocketHandler.swift:265 handleWriteHelper()] Write to socket (file descriptor 6) failed. Error = Error code: 336195711(0x1409F07F), ERROR: SSL_write, code: 336195711, reason: bad write retry.
-[2017-03-18T09:37:51.153Z] [ERROR] [IncomingSocketHandler.swift:265 handleWriteHelper()] Write to socket (file descriptor 7) failed. Error = Error code: 336195711(0x1409F07F), ERROR: SSL_write, code: 336195711, reason: bad write retry.
-[2017-03-18T09:37:59.057Z] [ERROR] [IncomingSocketHandler.swift:265 handleWriteHelper()] Write to socket (file descriptor 6) failed. Error = Error code: 336195711(0x1409F07F), ERROR: SSL_write, code: 336195711, reason: bad write retry.
+[2017-03-18T11:32:10.389Z] [INFO] [main.swift:35 kitura_ssl_bug] Using key  file = /root/kitura-ssl_bug/Certs/key.pem
+[2017-03-18T11:32:10.397Z] [INFO] [main.swift:36 kitura_ssl_bug] Using cert file = /root/kitura-ssl_bug/Certs/cert.pem
+[2017-03-18T11:32:10.402Z] [INFO] [HTTPServer.swift:86 listen(on:)] Listening on port 8090 (delegate: SSLService.SSLService)
+[2017-03-18T11:32:13.370Z] [ERROR] [IncomingSocketHandler.swift:265 handleWriteHelper()] Write to socket (file descriptor 7) failed. Error = Error code: 336195711(0x1409F07F), ERROR: SSL_write, code: 336195711, reason: bad write retry.
+[2017-03-18T11:32:15.896Z] [ERROR] [IncomingSocketHandler.swift:265 handleWriteHelper()] Write to socket (file descriptor 7) failed. Error = Error code: 336195711(0x1409F07F), ERROR: SSL_write, code: 336195711, reason: bad write retry.
+[2017-03-18T11:32:18.522Z] [ERROR] [IncomingSocketHandler.swift:265 handleWriteHelper()] Write to socket (file descriptor 7) failed. Error = Error code: 336195711(0x1409F07F), ERROR: SSL_write, code: 336195711, reason: bad write retry.
+[2017-03-18T11:32:20.646Z] [ERROR] [IncomingSocketHandler.swift:265 handleWriteHelper()] Write to socket (file descriptor 7) failed. Error = Error code: 336195711(0x1409F07F), ERROR: SSL_write, code: 336195711, reason: bad write retry.
+
 ```
 
