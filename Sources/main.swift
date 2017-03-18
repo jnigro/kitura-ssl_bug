@@ -32,11 +32,16 @@ let sslConfig:SSLConfig
                           withKeyFile: kFile,
                           usingSelfSignedCerts: true)
     
+	Log.info("Using key  file = \(kFile)")
+	Log.info("Using cert file = \(cFile)")
+
 #else
     
     let pfxFile = certBasePath + "/Certs/cert.pfx"
     sslConfig = SSLConfig(withChainFilePath: pfxFile, withPassword: "password", usingSelfSignedCerts: true)
     
+	Log.info("Using pfx file = \(pfxFile)")
+
 #endif
 
 // Create a new router
