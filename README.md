@@ -1,4 +1,4 @@
-# kitura-sslbug
+# kitura-ssl_bug
 
 This project demonstrates write/read errors with a Kitura server, which has been setup to work with HTTPS.
 
